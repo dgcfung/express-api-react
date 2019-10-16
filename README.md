@@ -500,7 +500,6 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 
-import apiUrl from '../../apiConfig'
 import ItemForm from '../shared/ItemForm'
 import Layout from '../shared/Layout'
 
@@ -529,7 +528,7 @@ class ItemCreate extends Component {
         event.preventDefault()
 
         axios({
-            url: `${apiUrl}/items`,
+            url: 'http://localhost:3001/api/items',
             method: 'POST',
             data: { item: this.state.item }
         })
