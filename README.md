@@ -118,7 +118,7 @@ Now let's create our routes:
 client/App.js
 ```js
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import Items from './components/routes/Items'
 import Item from './components/routes/Item'
@@ -128,11 +128,13 @@ import Home from './components/routes/Home'
 
 const App = () => (
   <React.Fragment>
+    <Switch>
     <Route exact path='/' component={Home} />
     <Route exact path='/items' component={Items} />
     <Route exact path='/create-item' component={ItemCreate} />
     <Route exact path='/items/:id' component={Item} />
     <Route exact path='/items/:id/edit' component={ItemEdit} />
+    </Switch>
   </React.Fragment>
 )
 
