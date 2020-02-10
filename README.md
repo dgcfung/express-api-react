@@ -188,7 +188,7 @@ const Layout = props => (
 export default Layout
 ```
 
-> Note: We are using `props.children` here. [React Children](https://reactjs.org/docs/react-api.html#reactchildren) is a placeholder for which ever component calls the component that `props.children` is in. You will see this in action in a minute.
+> Note: We are using `props.children` here. [React Children](https://reactjs.org/docs/react-api.html#reactchildren) is a placeholder for which every component calls the component that `props.children` is in. You will see this in action in a minute.
 
 Let's create our Nav component:
 
